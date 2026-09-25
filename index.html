@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#8f111a">
+<title>คลังเจ๋งแจ๋ว | GAME SHOP & INVESTMENT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floating">✦　🏮　✦　🏮　✦</div>
+<header>
+  <a class="logo" href="#"><span>🎮</span><b>คลังเจ๋งแจ๋ว<small>GAME SHOP & INVESTMENT</small></b></a>
+  <nav><a href="#home">หน้าแรก</a><a href="#games">ไอดีเกม</a><a href="#invest">ลงทุน</a><a href="#manage">จัดการร้าน</a></nav>
+  <button class="gold-btn" onclick="document.querySelector('#games').scrollIntoView({behavior:'smooth'})">เข้าสู่ร้าน →</button>
+</header>
+
+<section id="home" class="hero">
+  <img class="dragon-bg" src="dragon-hero.png" alt="มังกรจีนมงคล">
+  <div class="hero-shade"></div>
+  <div class="lantern left">🏮</div><div class="lantern right">🏮</div>
+  <div class="hero-content">
+    <div class="seal">招财进宝</div>
+    <p class="kicker">🐉 GAME SHOP • SMART INVESTMENT • 生意兴隆</p>
+    <h1>คลังเจ๋งแจ๋ว</h1>
+    <h2>ไอดีเกมคุณภาพ<br><strong>บริการจริง • กำไรไปด้วยกัน</strong></h2>
+    <p class="desc">ร้านขายไอดีเกมและระบบจัดการลงทุนสำหรับเจ้าของร้าน เก็บข้อมูลสินค้า ต้นทุน ราคาขาย รูปไอดี และรหัสเกมอย่างเป็นระบบ</p>
+    <div class="actions"><button class="main-btn" onclick="go('games')">🎮 เข้าสู่ร้าน</button><button class="sub-btn" onclick="go('manage')">＋ เพิ่มไอดีเกม</button></div>
+  </div>
+  <div class="dragon-label">生意兴隆<small>ค้าขายเจริญรุ่งเรือง</small></div>
+</section>
+
+<section class="features">
+  <div>🎮<b>ไอดีเกม</b><small>หลากหลายเกม</small></div>
+  <div>🛡️<b>ปลอดภัย</b><small>เช็กก่อนส่ง</small></div>
+  <div>⚡<b>เติมไว</b><small>ไม่ต้องรอนาน</small></div>
+  <div>📈<b>ลงทุนง่าย</b><small>เริ่มได้ทุกคน</small></div>
+</section>
+
+<section id="games" class="content">
+ <div class="heading"><div><span>GAME MARKET</span><h2>ไอดีเกมของเรา</h2></div><select><option>ทุกหมวดหมู่</option><option>eFootball</option><option>ROV</option><option>Free Fire</option></select></div>
+ <div class="cards">
+  <article><div class="gamepic football">⚽</div><div class="cardbody"><small>eFootball • EF-TH-001</small><h3>ID.THAI สะอาด</h3><p>ล็อค 6 • มีสินค้า</p><strong>฿399</strong><button>ดูไอดี</button></div></article>
+  <article><div class="gamepic japan">🇯🇵</div><div class="cardbody"><small>eFootball • EF-JP-002</small><h3>ID.JAPAN</h3><p>ล็อค 10 • มีสินค้า</p><strong>฿499</strong><button>ดูไอดี</button></div></article>
+  <article><div class="gamepic eu">🌍</div><div class="cardbody"><small>eFootball • EF-EU-003</small><h3>ID.EU</h3><p>นักเตะเด่น • มีสินค้า</p><strong>฿1,499</strong><button>ดูไอดี</button></div></article>
+ </div>
+</section>
+
+<section id="invest" class="dark">
+ <div class="content">
+  <div class="heading"><div><span>SMART INVESTMENT</span><h2>ระบบลงทุนร้านเกม</h2></div></div>
+  <div class="dash"><div><small>กำไรคาดการณ์</small><b>฿378</b><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div><small>เงินลงทุน</small><b>฿5,000</b><p>จัดการต้นทุน ราคาขาย และสต็อกไอดีในที่เดียว</p><button class="main-btn" onclick="go('manage')">จัดการสินค้า</button></div></div>
+ </div>
+</section>
+
+<section id="manage" class="content manage">
+ <div class="heading"><div><span>STORE MANAGEMENT</span><h2>เพิ่มไอดีเกมของร้าน</h2></div></div>
+ <div class="form">
+  <input placeholder="ชื่อสินค้า / ไอดีเกม">
+  <input placeholder="รหัสเกม / ID เกม">
+  <select><option>eFootball</option><option>ROV</option><option>Free Fire</option><option>เพิ่มหมวดหมู่...</option></select>
+  <input type="number" placeholder="ต้นทุน">
+  <input type="number" placeholder="ราคาขาย">
+  <label>🖼️ อัปโหลดรูปไอดีเกม <input type="file" accept="image/*"></label>
+  <button class="main-btn" onclick="alert('ตัวอย่างระบบ: บันทึกข้อมูลสินค้าแล้ว')">บันทึกสินค้า</button>
+ </div>
+</section>
+
+<footer>© 2026 คลังเจ๋งแจ๋ว • GAME SHOP & INVESTMENT • 🐉 生意兴隆</footer>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+</script>
+</body>
+</html>
